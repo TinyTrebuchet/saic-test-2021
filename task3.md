@@ -7,7 +7,7 @@
 
 `# apt-get update`	=> fails due to DNS error
 
--> copy hosts /etc/resolv.conf to docker's /etc/resolv.conf
+-> copy hosts /etc/resolv.conf to docker's /etc/resolv.conf, example given below, use your host os' /etc/resolv/conf
 
 ```
 # echo "search domain.name
@@ -31,19 +31,19 @@
 
 `# vim sites-enabled/pciitmandi`
 
-server {
-	listen 8888;
-	listen [::]:8888;
-	
-	server_name pc.iitmandi.co.in;
-
-	root /var/www/kamandprompt.github.io;
-	index index.html;
-
-	location / {
-		try_files $uri $uri/ =404;
-	}
-}
+> server {
+>	listen 8888;
+>	listen [::]:8888;
+>	
+>	server_name pc.iitmandi.co.in;
+>
+>	root /var/www/kamandprompt.github.io;
+>	index index.html;
+>
+>	location / {
+>		try_files $uri $uri/ =404;
+>	}
+> }
 
 `# vim sites-enabled/saic`
 
