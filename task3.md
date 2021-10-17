@@ -75,19 +75,23 @@ server {
 
 `# exit`
 
+
 -> back to host os
 
 `$ docker ps -a`
-
-> CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                     PORTS     NAMES  
-> 8491ed2cb407   ubuntu    "bash"    26 minutes ago   Exited (0) 2 minutes ago             reverent_robinson  
+~~~
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                     PORTS     NAMES  
+8491ed2cb407   ubuntu    "bash"    26 minutes ago   Exited (0) 2 minutes ago             reverent_robinson  
+~~~
 
 `$ docker commit 8491ed2cb407 tinytrebuchet/saic-test-2021:task3`
 
 `$ docker images`
 
-> REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE  
-> tinytrebuchet/saic-test-2021   task3     42cfdf72d7e8   14 seconds ago   413MB  
+~~~
+REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE  
+tinytrebuchet/saic-test-2021   task3     42cfdf72d7e8   14 seconds ago   413MB  
+~~~
 
 `$ docker login`
 
