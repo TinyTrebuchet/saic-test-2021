@@ -32,18 +32,18 @@
 `# vim sites-enabled/pciitmandi`
 
 > server {
->	listen 8888;
->	listen [::]:8888;
+>	listen 8888;  
+>	listen [::]:8888;  
 >	
->	server_name pc.iitmandi.co.in;
->
->	root /var/www/kamandprompt.github.io;
->	index index.html;
->
->	location / {
->		try_files $uri $uri/ =404;
->	}
-> }
+>	server_name pc.iitmandi.co.in;  
+>  
+>	root /var/www/kamandprompt.github.io;  
+>	index index.html;  
+>  
+>	location / {  
+>		try_files $uri $uri/ =404;  
+>	}  
+> }  
 
 `# vim sites-enabled/saic`
 
