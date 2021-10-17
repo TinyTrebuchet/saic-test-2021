@@ -9,9 +9,10 @@
 
 -> copy hosts /etc/resolv.conf to docker's /etc/resolv.conf
 
-`# echo "search domain.name \
+```# echo "search domain.name \
 > nameserver 202.56.215.54 \
-> nameserver 59.144.144.100" > /etc/resolv.conf`
+> nameserver 59.144.144.100" > /etc/resolv.conf
+```
 
 `# apt-get update`
 
@@ -29,19 +30,19 @@
 
 `# vim sites-enabled/pciitmandi`
 
-`server {
-	listen 8888;
-	listen [::]:8888;
+server { \
+	listen 8888; \
+	listen [::]:8888;  \
+	
+	server_name pc.iitmandi.co.in; \
 
-	server_name pc.iitmandi.co.in;
+	root /var/www/kamandprompt.github.io; \
+	index index.html; \
 
-	root /var/www/kamandprompt.github.io;
-	index index.html;
-
-	location / {
-		try_files $uri $uri/ =404;
-	}
-}`
+	location / { \
+		try_files $uri $uri/ =404; \
+	} \
+} \
 
 `# vim sites-enabled/saic`
 
