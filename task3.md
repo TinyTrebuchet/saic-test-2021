@@ -29,8 +29,7 @@
 
 `# vim sites-enabled/pciitmandi`
 
-{
-server {
+`server {
 	listen 8888;
 	listen [::]:8888;
 
@@ -42,14 +41,11 @@ server {
 	location / {
 		try_files $uri $uri/ =404;
 	}
-}
-}
+}`
 
 `# vim sites-enabled/saic`
 
-`# cat sites-enabled/saic`
-
-server {
+`server {
 	listen 9999;
 	listen [::]:9999;
 
@@ -61,7 +57,7 @@ server {
 	location / {
 		try_files $uri $uri/ =404;
 	}
-}
+}`
 
 `# nginx -t`
 
