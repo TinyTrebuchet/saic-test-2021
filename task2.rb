@@ -180,7 +180,7 @@ end
 host = ARGV[0]
 ip = get_ip(host)
 
-PORT_LIST = 1..1024
+PORT_LIST = 1..65536
 open_ports = Concurrent::Array.new
 
 pool = Concurrent::FixedThreadPool.new(THREAD_COUNT)
