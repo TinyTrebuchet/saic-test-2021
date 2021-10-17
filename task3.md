@@ -47,24 +47,24 @@
 
 `# vim sites-enabled/saic`
 
-server {  
-	listen 9999;  
-	listen [::]:9999;  
-
-	server_name saic.iitmandi.co.in;  
-	  
-	root /var/www/SAIC-Website;  
-	index index.html;  
-
-	location / {  
-		try_files $uri $uri/ =404;  
-	}  
-}  
+> server {  
+>	listen 9999;  
+>	listen [::]:9999;  
+>
+>	server_name saic.iitmandi.co.in;  
+>	  
+>	root /var/www/SAIC-Website;  
+>	index index.html;  
+>
+>	location / {  
+>		try_files $uri $uri/ =404;  
+>	}  
+> }  
 
 `# nginx -t`
 
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful
+> nginx: the configuration file /etc/nginx/nginx.conf syntax is ok  
+> nginx: configuration file /etc/nginx/nginx.conf test is successful  
 
 `# service nginx start`
 -> server starts running at localhost:8888 and localhost:9999
@@ -77,15 +77,15 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 `$ docker ps -a`
 
-CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                     PORTS     NAMES
-8491ed2cb407   ubuntu    "bash"    26 minutes ago   Exited (0) 2 minutes ago             reverent_robinson
+> CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                     PORTS     NAMES  
+> 8491ed2cb407   ubuntu    "bash"    26 minutes ago   Exited (0) 2 minutes ago             reverent_robinson  
 
 `$ docker commit 8491ed2cb407 tinytrebuchet/saic-test-2021:task3`
 
 `$ docker images`
 
-REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE
-tinytrebuchet/saic-test-2021   task3     42cfdf72d7e8   14 seconds ago   413MB
+> REPOSITORY                     TAG       IMAGE ID       CREATED          SIZE  
+> tinytrebuchet/saic-test-2021   task3     42cfdf72d7e8   14 seconds ago   413MB  
 
 `$ docker login`
 
