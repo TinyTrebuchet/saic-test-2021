@@ -19,8 +19,6 @@
 
 `# apt-get install vim git nginx`
 
-`# service nginx status`
-
 `# cd /var/www`
 
 `# git clone https://github.com/KamandPrompt/SAIC-Website.git`
@@ -69,6 +67,8 @@ server {
 
 > nginx: the configuration file /etc/nginx/nginx.conf syntax is ok  
 > nginx: configuration file /etc/nginx/nginx.conf test is successful  
+
+`# service nginx enable`
 
 `# service nginx start`
 -> server starts running at localhost:8888 and localhost:9999
