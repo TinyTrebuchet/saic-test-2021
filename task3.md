@@ -9,9 +9,9 @@
 
 -> copy hosts /etc/resolv.conf to docker's /etc/resolv.conf
 
-`# echo "search domain.name
+```# echo "search domain.name
 > nameserver 202.56.215.54
-> nameserver 59.144.144.100" > /etc/resolv.conf`
+> nameserver 59.144.144.100" > /etc/resolv.conf```
 
 `# apt-get update`
 
