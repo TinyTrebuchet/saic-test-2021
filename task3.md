@@ -47,19 +47,19 @@
 
 `# vim sites-enabled/saic`
 
-server {
-	listen 9999;
-	listen [::]:9999;
+server {  
+	listen 9999;  
+	listen [::]:9999;  
 
-	server_name saic.iitmandi.co.in; 
+	server_name saic.iitmandi.co.in;  
+	  
+	root /var/www/SAIC-Website;  
+	index index.html;  
 
-	root /var/www/SAIC-Website;
-	index index.html;
-
-	location / {
-		try_files $uri $uri/ =404;
-	}
-}`
+	location / {  
+		try_files $uri $uri/ =404;  
+	}  
+}  
 
 `# nginx -t`
 
