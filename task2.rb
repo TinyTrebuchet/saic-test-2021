@@ -13,9 +13,9 @@ API_KEY = "302167897-127171339-778362026"
 
 SMTP_ADDR = 'smtp.gmail.com'
 SMTP_PORT = 587
-FROM_ADDR = 'b20099@students.iitmandi.ac.in'
-TO_ADDR = 'gaurav.gen3@gmail.com'
-APP_PASSWD = 'uzqlxalwlhbpdxng'
+FROM_ADDR = '<YOUR-EMAIL>'
+TO_ADDR = '<TARGET-EMAIL>'
+APP_PASSWD = '<APP-PASSWORD>'
 
 TIMEOUT = 2
 THREAD_COUNT = 64
