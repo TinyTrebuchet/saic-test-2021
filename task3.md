@@ -1,6 +1,6 @@
-$ systemctl start docker
+`$ systemctl start docker`
 
-$ docker pull ubuntu
+`$ docker pull ubuntu`
 
 $ docker run -it -p 8888:8888 -p 9999:9999 ubuntu
 -> starts docker instance
