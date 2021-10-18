@@ -30,7 +30,7 @@ http://192.168.1.10/index.html           (Status: 200) [Size: 183]
 http://192.168.1.10/server-status        (Status: 403) [Size: 277] 
 ~~~
 We found /files/ directory to be accessible by us containing a file 'site.html', which isn't particularly useful though.  
-Next we investigate the ftp port and check if it allows anonymous connections:
+Next we investigate the ftp port and check if it allows anonymous connections:  
 `ftp 192.168.1.10`  
 ~~~
 Connected to 192.168.1.10.
