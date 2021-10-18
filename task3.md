@@ -100,3 +100,8 @@ tinytrebuchet/saic-test-2021   task3     42cfdf72d7e8   14 seconds ago   413MB
 `$ docker login`
 
 `$ docker push tinytrebuchet/saic-test-2021:task3`
+
+
+### Things Learnt
+1. Learnt Docker from scratch, how it works and how to use it
+2. Learnt nginx from scratch, how it works and how to use it.
