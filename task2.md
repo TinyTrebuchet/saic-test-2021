@@ -19,10 +19,9 @@ The script takes about half an hour or more to scan all the ports, so it should 
 
 ![s1](https://user-images.githubusercontent.com/73381089/137683458-9cd25b3c-3d2c-40bf-ab81-bdc0bdc004f2.png)  
 
-![s2](https://user-images.githubusercontent.com/73381089/137683476-ff877abf-8fb3-4e0c-b09e-6219ffc5d8fc.png)  
+![2021-10-18-132520_1920x1080_scrot](https://user-images.githubusercontent.com/73381089/137690836-095a4c9a-a978-4100-9659-e0744f692ddd.png)  
 
-![s3](https://user-images.githubusercontent.com/73381089/137683489-cd7b9c80-14d0-40a6-b2ee-9d9e44b2a4a7.png)  
-
+![2021-10-18-132534_1920x1080_scrot](https://user-images.githubusercontent.com/73381089/137690876-e425c2b7-cae7-4a68-9ed2-477128d3278e.png)  
 
 ### Things Learnt
 1. Multi-threading, socket programming, and smtp in ruby, what thread pools are and how they work
