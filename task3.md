@@ -106,6 +106,11 @@ To run the docker instance on your machine, do:
 `docker pull tinytrebuchet/saic-test-2021:task3`  
 `docker run -it -p <p1>:8888 -p <p2>:9999 tinytrebuchet/saic-test-2021:task3` where p1 and p2 should be replaced by the ports on which you want the websites to run on localhost.  
 
+![2021-10-18-124946_1920x1080_scrot](https://user-images.githubusercontent.com/73381089/137685860-b2648304-e2ab-4735-a30f-ab07f30cb4a0.png)  
+
+![2021-10-18-125000_1920x1080_scrot](https://user-images.githubusercontent.com/73381089/137685903-48b0a3e8-726c-4d28-b44b-6f6710f086be.png)  
+
+
 ### Things Learnt
 1. Learnt Docker from scratch, how it works and how to use it
 2. Learnt nginx from scratch, how it works and how to use it.
