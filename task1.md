@@ -133,4 +133,5 @@ I decided to investigate for privilege escalation on the machine. I used the 'li
 ## Method 2
 I actually thought of this method immediately when I saw the ova file, but decided to save it for last, as it doesn't involving finding vulnerablites in the server, but is rather a dirty trick, but it still allowed me to get the key in under 5 mins, so I thought to share it here.  
 The plan was, if the machine has unencrypted file system, we could simple boot from a live-usb to access the filesystem and get the key from dk's home directory. I used my handy arch-iso (I use arch btw 😛), put that into virtual machine's storage devices under 'Controller: IDE', marked it as 'Live CD/DVD' on right pane, saved the changes and rebooted the machine. As expected, the machine booted from live arch iso, and we could easily get the file by mounting the file system.  
+
 ![Screenshot from 2021-10-18 12-08-12](https://user-images.githubusercontent.com/73381089/137680984-ff0af756-6436-4bde-b373-a02762fa61b3.png)
