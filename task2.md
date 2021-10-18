@@ -14,3 +14,17 @@ After that, the script has to perform service detection. I thought of two possib
 I found the 2nd part a little hard to implement, as I couldn't come across such a database with banners of all popular services, and therefore left it out for now. Instead, the script performs the 1st part and then performs banner grabbing on all open ports using a TCPSocket and sending an arbitrary payload, assembles it into a single text file, and mails it to the target later. This way, the script also has an added feature of naive banner grabbing on the open ports, which can be examined in detail by the target at his convenience.  
 
 Finally, the script has to mail the results to the target, from user. I used the net/smtp module to send the mail along with the necessary attachments. If the user is using gmail, he has to put his email in the FROM_ADDR constant, the target's mail (to whom he wants to mail, could be himself) in the TO_ADDR constant, and the app-password in APP_PASSWD constant. If he's not using gmail, then he has to modify the SMTP_ADDR and SMTP_PORT too according to his email provider's smtp server. There is also the issue of leaving plaintext password (though it's supposed to be an app-password and not the actual password) in open, which I left as it is for now. So, the script's read permissions should be appropriately modified.  
+
+The script takes about half an hour or more to scan all the ports, so it should be preferably backgrounded using '&' when run. If you want the script to be executed periodically, say every day, you can use crontabs to do this for you. Use: `crontab -e` and add `0 15 * * * port_scanner.rb` to run it everyday at 3pm. Be sure to use absolute path for the port_scanner.rb  
+
+![s1](https://user-images.githubusercontent.com/73381089/137683458-9cd25b3c-3d2c-40bf-ab81-bdc0bdc004f2.png)  
+
+![s2](https://user-images.githubusercontent.com/73381089/137683476-ff877abf-8fb3-4e0c-b09e-6219ffc5d8fc.png)  
+
+![s3](https://user-images.githubusercontent.com/73381089/137683489-cd7b9c80-14d0-40a6-b2ee-9d9e44b2a4a7.png)  
+
+
+### Things Learnt
+1. Multi-threading, socket programming, and smtp in ruby, what thread pools are and how they work
+2. Worked with online apis for the first time
+3. Got more confidence in writing ruby scripts
