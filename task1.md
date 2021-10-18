@@ -72,10 +72,8 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 $ 
 ~~~
 A good practice is to stabilize the reverse shell, which can be done easily if the server has python installed, that way we have support for tab-autocompletion and Ctrl-C doesn't close our netcat listener. This can be done by executing the following commands:  
-```
-python3 -c 'import pty; pty.spawn("/bin/bash")'
-export TERM=xterm
-```
+`python3 -c 'import pty; pty.spawn("/bin/bash")'`  
+`export TERM=xterm`  
 Then, we press Ctrl-Z on our keyboard to background the reverse shell, modify the stty on your host os, and then foreground:  
 `stty raw -echo; fg`  
 After this, we should have a fully stabilized reverse-shell.  
