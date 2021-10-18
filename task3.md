@@ -102,6 +102,10 @@ tinytrebuchet/saic-test-2021   task3     42cfdf72d7e8   14 seconds ago   413MB
 `$ docker push tinytrebuchet/saic-test-2021:task3`
 
 
+To run the docker instance on your machine, do:  
+`docker pull tinytrebuchet/saic-test-2021:task3`  
+`docker run -it -p <p1>:8888 -p <p2>:9999 tinytrebuchet/saic-test-2021:task3` where <p1> and <p2> should be replaced by the ports on which you want the websites to run on localhost.  
+
 ### Things Learnt
 1. Learnt Docker from scratch, how it works and how to use it
 2. Learnt nginx from scratch, how it works and how to use it.
