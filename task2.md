@@ -1,6 +1,6 @@
 # Task 2: Write a script that takes a target domain/ip as input and performs the given actions
 
-The script is basic port scanner written in ruby. I chose ruby for the script, as I was learning it for metasploit and wanted to work on a project to get some experience using it.  
+The [script](https://github.com/TinyTrebuchet/saic-test-2021/blob/main/task2.rb) is basic port scanner written in ruby. I chose ruby for the script, as I was learning it for metasploit and wanted to work on a project to get some experience using it.  
 The script requires 'concurrent' gem to be installed, which can be done by: `gem install concurrent-ruby`  
 
 The script firstly uses the socket module to get the ip of the given domain name, and then runs a port scanner on all ports, checking which ports are read-to-write AND actually writable (eg. ftp port which came up as ready-to-write but wasn't writable during testing), and marking them as open. It uses multithreading to speed things up, dividing the tasks into smaller units and giving it to a thread pool. Higher thread count means lesser time to scan all ports, but it also comes with the risk of host just dropping the incoming packets because they are arriving too fast. I found 64 threads to be a good figure, but it can be changed by modifiying the THREAD_COUNT constant.  
